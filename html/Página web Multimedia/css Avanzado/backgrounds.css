@@ -1,0 +1,20 @@
+body{
+    background-color: bisque;
+}
+.fondo{
+    height: 1280px;
+    /* se puede asi*/
+    background:#111010 
+    url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/dbd8aa14130335.5627df3c18708.png') 
+    no-repeat left top fixed ;
+    /* o asi*/
+    background-color: #111010;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/dbd8aa14130335.5627df3c18708.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+p{
+    color: white;
+}

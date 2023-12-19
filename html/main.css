@@ -1,0 +1,13 @@
+/*Comentarios*/
+/*etiqueta*/
+body{
+    background-color: rgb(10, 10, 10);
+}
+/*id*/
+#parrafo{
+    color: rgb(204, 0, 255);
+}
+/*class*/
+.etiqueta{
+    color: aquamarine;
+}

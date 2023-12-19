@@ -1,0 +1,18 @@
+body{
+    background-color: blanchedalmond;
+}
+.caja {
+    /*Margen espacio en pixeles en los 4 lados*/
+    margin: 8px;
+    /*Margen interno*/
+    padding: 8px ;
+    /* margen internet*/
+    border-style: solid;
+    /**/
+    border-width: 9px;
+    border-color: rgb(169, 11, 231);
+    border-left:9px ridge rgb(0, 0, 0);
+    border-radius: 3px;
+    background-color: cadetblue;
+    color:azure;
+}

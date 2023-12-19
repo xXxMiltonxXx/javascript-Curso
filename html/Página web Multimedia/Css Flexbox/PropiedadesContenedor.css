@@ -1,0 +1,18 @@
+body{
+    background-color: #eee;
+    width: 200px;
+}
+.flex{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /* align-items: stretch; */
+    /* Para alinear un contenido  */
+    height: 200px;
+    align-content: space-evenly;
+}
+.red{
+    background-color: red;
+}

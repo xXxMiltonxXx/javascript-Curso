@@ -1,0 +1,262 @@
+/* body {
+    background-color:#001f3f;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.tracking-in-contract:hover{
+    animation:tracking-in-contract 0.4s linear both}
+    @keyframes tracking-in-contract{0%{letter-spacing:.6em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}
+}
+
+#correo-form {
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.705);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+textarea{
+    max-width: 250px;
+}
+
+button {
+    background-color: #f5f5dc;
+    color: #333333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.scale-up-center:hover{
+    animation:scale-up-center 0.4s; } @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} 
+} */
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #243b55;
+}
+
+.mailer-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+
+
+.mailer-box h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+.titulo-proyecto {
+    margin-top: 20px;
+    height: 40px;
+    display: flex;
+    font-size: 35px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+ul,
+p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+p {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style: none;
+    animation: movimiento 10s infinite;
+}
+
+ul li {
+    background-image: linear-gradient(180deg, #b4ffc2 0, #97ffc5 16.67%, #6dffc3 33.33%,
+            #10f8be 50%, #00e7bb 66.67%, #00dbbe 83.33%, #00d4c6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 5px;
+    letter-spacing: 1px;
+}
+
+@keyframes movimiento {
+    0% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: -40px;
+    }
+
+    50% {
+        margin-top: -40px;
+    }
+
+    55% {
+        margin-top: -80px;
+    }
+
+    80% {
+        margin-top: -80px;
+    }
+
+    85% {
+        margin-top: -40px;
+    }
+
+    95% {
+        margin-top: -40px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+.mailer-box .item {
+    position: relative;
+}
+
+.mailer-box .item input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+
+}
+/*campo de autocompletado*/
+.mailer-box .item input:-webkit-autofill {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.mailer-box .item textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.mailer-box .item label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.mailer-box .item input:focus~label,
+
+.mailer-box .item input:valid~label {
+    top: -20px;
+    left: 0px;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.mailer-box .item textarea:focus~label,
+.mailer-box .item textarea:valid~label {
+    top: -20px;
+    left: 0px;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.mailer-box #correo-form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.mailer-box #correo-form button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(13, 240, 252, .4);
+    transform: translateY(-7px);
+}
+#error{
+    background-color: rgb(134, 5, 5);
+    color: #fff;
+}

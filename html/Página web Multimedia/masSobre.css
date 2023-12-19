@@ -1,0 +1,20 @@
+body{
+    background-color: #000;
+    color:aliceblue
+}
+img{
+    float:right;
+}
+div p{
+    font-size: 1.1em;
+}
+img:hover{
+    opacity: 0.8;
+}
+i:hover{
+    
+    color: blueviolet;
+}
+div i:hover{
+    color:cyan;
+}

@@ -1,0 +1,22 @@
+body{
+    background-color:black ;
+}
+.titulos1{
+    color: rgb(254, 250, 255);
+    margin: 12px;
+    border-style: hidden;
+    border-color: black;
+    border-radius: 4px;
+    background-color: rgb(154, 18, 233);
+    height: 100px;
+    width: 200px;
+}
+.titulos2{
+    color: rgb(43, 153, 226);
+}
+.parrafos{
+    color:white;
+}
+.listas{
+    color:chartreuse ;
+}

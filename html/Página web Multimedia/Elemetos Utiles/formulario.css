@@ -1,0 +1,38 @@
+body{
+    background-color: #111010;
+}
+.box{
+    background-color: white;
+    padding: 70px 400px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 3px rgb(208, 208, 208,0.2);;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #d4cc00;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    width: 100%;
+    background-color: #241a1a;
+    color: #d4cc00;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #d4cc00;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+

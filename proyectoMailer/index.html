@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de correos</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <div class="titulo-proyecto">
+        <p class="tracking-in-contract">PROYECTO ENVÍO DE MENSAJES CON: </p>
+        <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Dotenv</li>
+            <li>SendGrid</li>
+            <li>Html y CSS</li>
+        </ul>
+    </div>
+    <div class="mailer-box">
+        <h1>Mailer</h1>
+        <form id="correo-form">
+            <div class="item">
+                <input name="para"  required="" autocomplete="on"/>
+                <label>Para:</label>
+
+            </div>
+            <div class="item">
+                <input name="asunto" required="" autocomplete="off"/>
+                <label>Asunto:</label>
+
+            </div>
+            <div class="item">
+                <textarea name="html" required=""></textarea autocomplete="off">
+                <label>Mensaje:</label>
+
+            </div>
+            <button class="scale-up-center" type="submit">Enviar</button>
+        </form>
+        <div id="error"></div>
+    </div>
+
+</body>
+
+</html>

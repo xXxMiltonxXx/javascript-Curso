@@ -1,0 +1,9 @@
+body{
+    background-color: #eee;
+}
+.Grid{
+    display: inline-grid;
+}
+.element{
+    background-color: aqua;
+}
